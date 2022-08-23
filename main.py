@@ -16,18 +16,17 @@
 
 # .........Create a list by picking an odd-index items from the first list and even index items from the second......
 
-l1 = [3, 6, 9, 12, 15, 18, 21]
-l2 = [4, 8, 12, 16, 20, 24, 28]
-l3 = l1[1::2]
-print(f'Element at odd-index positions from list one \n {l3}')
-l4 = l2[0::2]
-print(f'Element at even-index positions from list second \n {l4}')
-
-a = l3 + l4
-print(f'Printing Final third list \n {a}')
+# ......Slice list into 3 equal chunks and reverse each chunk.....
 
 
 
+
+sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+result = sample_list[0:3:1]
+print(f'first chunk\n{result}')
+result.reverse()
+print(f'after reverse first chunk\n{result}')
+# print(f'Chunk  1 \n {sample_list[0:3:1]}')
 
 
 
