@@ -19,25 +19,41 @@
 # ......Slice list into 3 equal chunks and reverse each chunk.....
 
 
-sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
-print(f'original list:{sample_list}')
+# sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+# print(f'original list:{sample_list}')
 
-length =len(sample_list)
-firstPart =int(length/3)
-start = 0
-end = firstPart
-
-
-
-for i in range(3):
-   indexes = slice(start,end)
-
-
-   listchunck =sample_list[indexes]
-   print(i,listchunck)
+# length =len(sample_list)
+# firstPart =int(length/3)
+# start = 0
+# end = firstPart
 
 
 
+
+# ...........Count the occurrence of each element from a list...........
+
+sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89]
+
+resultDict = {}
+for item in sample_list:
+    if item in resultDict:
+        resultDict[item] = resultDict[item] + 1
+       
+    else:
+        resultDict[item] = 1
+        
+
+# resultDict[11] = count
+print(resultDict)
+
+
+ 
+
+
+
+
+
+    
 
 
 
