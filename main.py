@@ -19,14 +19,25 @@
 # ......Slice list into 3 equal chunks and reverse each chunk.....
 
 
-
-
 sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
-result = sample_list[0:3:1]
-print(f'first chunk\n{result}')
-result.reverse()
-print(f'after reverse first chunk\n{result}')
-# print(f'Chunk  1 \n {sample_list[0:3:1]}')
+print(f'original list:{sample_list}')
+
+length =len(sample_list)
+firstPart =int(length/3)
+start = 0
+end = firstPart
+
+
+
+for i in range(3):
+   indexes = slice(start,end)
+
+
+   listchunck =sample_list[indexes]
+   print(i,listchunck)
+
+
+
 
 
 
