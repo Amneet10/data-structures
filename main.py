@@ -29,31 +29,22 @@
 
 
 
-
-# ...........Count the occurrence of each element from a list...........
-
-sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89]
-
-resultDict = {}
-for item in sample_list:
-    if item in resultDict:
-        resultDict[item] = resultDict[item] + 1
-       
-    else:
-        resultDict[item] = 1
-        
-
-# resultDict[11] = count
-print(resultDict)
-
-
  
 
 
 
 
-
+# .....Python program to interchange first and last elements in a list......
     
+
+
+
+ListOfString = [12,34,56,78,899,99]
+size = len(ListOfString)
+
+positionOfElement = ListOfString[0] 
+ListOfString[0] = size - 1
+print(ListOfString)
 
 
 
@@ -70,3 +61,17 @@ print(resultDict)
 
    
         
+def swapList(newList):
+    size = len(newList)
+     
+    
+    temp = newList[0]
+    newList[0] = newList[size - 1]
+    newList[size - 1] = temp
+     
+    return newList
+     
+
+newList = [12, 35, 9, 56, 24]
+ 
+print(swapList(newList))
