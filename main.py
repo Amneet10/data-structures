@@ -39,39 +39,13 @@
 
 
 
-ListOfString = [12,34,56,78,899,99]
-size = len(ListOfString)
+sampleString = "My name is Amneet. I live in Canada. I done my Master's in Computer Science . Canada is a beautiful City"
+resultDict = {}
 
-positionOfElement = ListOfString[0] 
-ListOfString[0] = size - 1
-print(ListOfString)
+for item in sampleString.split():
+    if item in resultDict:
+        resultDict[item] = resultDict[item] + 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-        
-def swapList(newList):
-    size = len(newList)
-     
-    
-    temp = newList[0]
-    newList[0] = newList[size - 1]
-    newList[size - 1] = temp
-     
-    return newList
-     
-
-newList = [12, 35, 9, 56, 24]
- 
-print(swapList(newList))
+    else:
+        resultDict[item] = 1
+print(resultDict)
