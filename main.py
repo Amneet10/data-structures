@@ -67,9 +67,17 @@
 
 # ........Multiple Parameters......
 
-def AddTwoNumbers(a,b):
-    sum = a + b
-    return sum
+# def AddTwoNumbers(a,b):
+#     sum = a + b
+#     return sum
 
 
-print(AddTwoNumbers(3,4))
+# print(AddTwoNumbers(3,4))
+
+
+# .........Infinite Loop.......
+n = 5
+while n > 0:
+    
+    print("hello")
+    break
