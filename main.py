@@ -52,14 +52,14 @@
 
 
 
-def greet(lang):
-    # ....lang is the parameter....
-    if lang == 'es':
-        print("Hello world")
+def Calander(Months):
+  
+    if Months == 'August':
+        print(f'Cool,Its My Birthday Month {Months}')
 
-    if lang == 'ps':
-        print("GoodBye")
+    elif Months == 'June':
+        print(f'Yeah,Its My Husband Bithday Month {Months}')
     else:
-        print("GoodNight")
+        print('Oops')
 
-greet('ts')
+Calander('August')
