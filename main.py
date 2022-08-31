@@ -34,18 +34,32 @@
 
 
 
-# .....Python program to interchange first and last elements in a list......
+# # .....Python program to interchange first and last elements in a list......
     
 
 
 
-sampleString = "My name is Amneet. I live in Canada. I done my Master's in Computer Science . Canada is a beautiful City"
-resultDict = {}
+# sampleString = "My name is Amneet. I live in Canada. I done my Master's in Computer Science . Canada is a beautiful City"
+# resultDict = {}
 
-for item in sampleString.split():
-    if item in resultDict:
-        resultDict[item] = resultDict[item] + 1
+# for item in sampleString.split():
+#     if item in resultDict:
+#         resultDict[item] = resultDict[item] + 1
 
+#     else:
+#         resultDict[item] = 1
+# print(resultDict)
+
+
+
+def greet(lang):
+    # ....lang is the parameter....
+    if lang == 'es':
+        print("Hello world")
+
+    if lang == 'ps':
+        print("GoodBye")
     else:
-        resultDict[item] = 1
-print(resultDict)
+        print("GoodNight")
+
+greet('ts')
