@@ -34,32 +34,42 @@
 
 
 
-# # .....Python program to interchange first and last elements in a list......
+# # # .....Python program to interchange first and last elements in a list......
     
 
 
 
-# sampleString = "My name is Amneet. I live in Canada. I done my Master's in Computer Science . Canada is a beautiful City"
-# resultDict = {}
+# # sampleString = "My name is Amneet. I live in Canada. I done my Master's in Computer Science . Canada is a beautiful City"
+# # resultDict = {}
 
-# for item in sampleString.split():
-#     if item in resultDict:
-#         resultDict[item] = resultDict[item] + 1
+# # for item in sampleString.split():
+# #     if item in resultDict:
+# #         resultDict[item] = resultDict[item] + 1
 
-#     else:
-#         resultDict[item] = 1
-# print(resultDict)
+# #     else:
+# #         resultDict[item] = 1
+# # print(resultDict)
 
 
 
-def Calander(Months):
+# def Calander(Months):
   
-    if Months == 'August':
-        print(f'Cool,Its My Birthday Month {Months}')
+#     if Months == 'August':
+#         print(f'Cool,Its My Birthday Month {Months}')
 
-    elif Months == 'June':
-        print(f'Yeah,Its My Husband Bithday Month {Months}')
-    else:
-        print('Oops')
+#     elif Months == 'June':
+#         print(f'Yeah,Its My Husband Bithday Month {Months}')
+#     else:
+#         print('Oops')
 
-Calander('August')
+# Calander('August')
+
+
+# ........Multiple Parameters......
+
+def AddTwoNumbers(a,b):
+    sum = a + b
+    return sum
+
+
+print(AddTwoNumbers(3,4))
