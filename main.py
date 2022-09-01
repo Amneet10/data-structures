@@ -76,8 +76,17 @@
 
 
 # .........Infinite Loop.......
-n = 5
-while n > 0:
-    
-    print("hello")
-    break
+
+# friends = ['Gagan','Kuldeep','Jonu']
+# for i in friends:
+#     print(f'Happy Birthday :{i}' )
+# print('Done!')
+
+
+largestNumber_so_far = -1
+print('before',largestNumber_so_far)
+for i in [2,45,67,12,46,67,89,2]:
+    if i > largestNumber_so_far:
+        largestNumber_so_far = i
+    print(largestNumber_so_far,i)
+print('after',largestNumber_so_far)
