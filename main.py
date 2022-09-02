@@ -117,13 +117,28 @@ listOFElement = [[12,3],[4,6],[6,7]]
 newDict = dict(listOFElement)
 print(newDict)
 
+person = {"Name":"Amneet","Country":["India","Canada"]}
+print(person)
+
+
 # .........Create an Dictionary as a Mixed keys...........
 
 person = {"Name":"Amneet","Mobile" :122356466}
 print(person)
 
+# ............Empty Dictionary..........
+
+person = {}
+print(type(person))
+
+# ......Retrieve values from Dictionary..........
+
+person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+print(person["Name"])
+
+# ......Second Method.........
+person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+print(person.get("Name"))
 
 
-
-
-
+# ....Best method to retrieve the value is using Get method because its error safe...its hand program gracefully....
