@@ -107,38 +107,53 @@
 #............... Create Dictionary................
 
 person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-print(person)
+
 
 # .........Dictionary Created as a Pair........
 person = dict([("Name","Amneet"),("Country","Canada"),("Status","PR")])
-print(person)
+
 # .............Dictionary As a Pair using List 
 listOFElement = [[12,3],[4,6],[6,7]]
 newDict = dict(listOFElement)
-print(newDict)
+
 
 person = {"Name":"Amneet","Country":["India","Canada"]}
-print(person)
+
 
 
 # .........Create an Dictionary as a Mixed keys...........
 
 person = {"Name":"Amneet","Mobile" :122356466}
-print(person)
+
 
 # ............Empty Dictionary..........
 
 person = {}
-print(type(person))
+
 
 # ......Retrieve values from Dictionary..........
 
 person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-print(person["Name"])
+
 
 # ......Second Method.........
 person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-print(person.get("Name"))
+
+
+for key,value in person.items():
+    print(key,value)
 
 
 # ....Best method to retrieve the value is using Get method because its error safe...its hand program gracefully....
+
+
+
+#.... One way to add something in dict....
+person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+person["Mobile"] =123455
+print(person)
+
+# ....second method using update method ......
+person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+person.update({"Mobile":12344})
+print(person)
