@@ -80,13 +80,50 @@
 # friends = ['Gagan','Kuldeep','Jonu']
 # for i in friends:
 #     print(f'Happy Birthday :{i}' )
-# print('Done!')
+# # print('Done!')
 
 
-largestNumber_so_far = -1
-print('before',largestNumber_so_far)
-for i in [2,45,67,12,46,67,89,2]:
-    if i > largestNumber_so_far:
-        largestNumber_so_far = i
-    print(largestNumber_so_far,i)
-print('after',largestNumber_so_far)
+# largestNumber_so_far = -1
+# print('before',largestNumber_so_far)
+# for i in [2,45,67,12,46,67,89,2]:
+#     if i > largestNumber_so_far:
+#         largestNumber_so_far = i
+#     print(largestNumber_so_far,i)
+# print('after',largestNumber_so_far)
+
+
+
+# smallest = None
+# print("Before:", smallest)
+# for itervar in [3, 41, 12, 9, 74, 15]:
+#     if smallest is None or itervar < smallest:
+#         smallest = itervar
+#         # break
+#     print("Loop:", itervar, smallest)
+# print("Smallest:", smallest)
+
+
+
+#............... Create Dictionary................
+
+person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+print(person)
+
+# .........Dictionary Created as a Pair........
+person = dict([("Name","Amneet"),("Country","Canada"),("Status","PR")])
+print(person)
+# .............Dictionary As a Pair using List 
+listOFElement = [[12,3],[4,6],[6,7]]
+newDict = dict(listOFElement)
+print(newDict)
+
+# .........Create an Dictionary as a Mixed keys...........
+
+person = {"Name":"Amneet","Mobile" :122356466}
+print(person)
+
+
+
+
+
+
