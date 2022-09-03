@@ -165,4 +165,11 @@ del person["Country"]
 print(person)
 person.clear()
 print(person)
+# ....................................................
 
+
+person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+if "Statu" in person.keys():
+    print("key found")
+else:
+    print("key is not found")
