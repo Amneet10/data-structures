@@ -106,6 +106,9 @@
 
 #............... Create Dictionary................
 
+from unicodedata import name
+
+
 person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
 
 
@@ -149,11 +152,17 @@ for key,value in person.items():
 
 
 #.... One way to add something in dict....
-person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-person["Mobile"] =123455
-print(person)
+
+
 
 # ....second method using update method ......
-person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-person.update({"Mobile":12344})
+
+# deleted last item from the dict that last inserted.....
+person = {"Name" :"Amneet","Country":"Canada","Status":"PR"}
+
+
+del person["Country"]
 print(person)
+person.clear()
+print(person)
+
