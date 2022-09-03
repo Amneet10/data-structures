@@ -155,21 +155,20 @@ for key,value in person.items():
 
 
 
-# ....second method using update method ......
-
-# deleted last item from the dict that last inserted.....
-person = {"Name" :"Amneet","Country":"Canada","Status":"PR"}
+# ....second method usin
 
 
-del person["Country"]
-print(person)
-person.clear()
-print(person)
-# ....................................................
 
 
-person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-if "Statu" in person.keys():
-    print("key found")
-else:
-    print("key is not found")
+
+dict1 = {'Jessa': 70, 'Arul': 80, 'Emma': 55}
+dict2 = {'Kelly': 68, 'Arul': 50, 'Olivia': 66}
+dict1.update(dict2)
+print(dict1)
+
+# override first key with second key...........
+
+
+
+
+
