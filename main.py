@@ -72,79 +72,79 @@
 #     return sum
 
 
-# print(AddTwoNumbers(3,4))
+# # print(AddTwoNumbers(3,4))
 
 
-# .........Infinite Loop.......
+# # .........Infinite Loop.......
 
-# friends = ['Gagan','Kuldeep','Jonu']
-# for i in friends:
-#     print(f'Happy Birthday :{i}' )
-# # print('Done!')
-
-
-# largestNumber_so_far = -1
-# print('before',largestNumber_so_far)
-# for i in [2,45,67,12,46,67,89,2]:
-#     if i > largestNumber_so_far:
-#         largestNumber_so_far = i
-#     print(largestNumber_so_far,i)
-# print('after',largestNumber_so_far)
+# # friends = ['Gagan','Kuldeep','Jonu']
+# # for i in friends:
+# #     print(f'Happy Birthday :{i}' )
+# # # print('Done!')
 
 
-
-# smallest = None
-# print("Before:", smallest)
-# for itervar in [3, 41, 12, 9, 74, 15]:
-#     if smallest is None or itervar < smallest:
-#         smallest = itervar
-#         # break
-#     print("Loop:", itervar, smallest)
-# print("Smallest:", smallest)
+# # largestNumber_so_far = -1
+# # print('before',largestNumber_so_far)
+# # for i in [2,45,67,12,46,67,89,2]:
+# #     if i > largestNumber_so_far:
+# #         largestNumber_so_far = i
+# #     print(largestNumber_so_far,i)
+# # print('after',largestNumber_so_far)
 
 
 
-#............... Create Dictionary................
-
-from unicodedata import name
-
-
-person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-
-
-# .........Dictionary Created as a Pair........
-person = dict([("Name","Amneet"),("Country","Canada"),("Status","PR")])
-
-# .............Dictionary As a Pair using List 
-listOFElement = [[12,3],[4,6],[6,7]]
-newDict = dict(listOFElement)
-
-
-person = {"Name":"Amneet","Country":["India","Canada"]}
+# # smallest = None
+# # print("Before:", smallest)
+# # for itervar in [3, 41, 12, 9, 74, 15]:
+# #     if smallest is None or itervar < smallest:
+# #         smallest = itervar
+# #         # break
+# #     print("Loop:", itervar, smallest)
+# # print("Smallest:", smallest)
 
 
 
-# .........Create an Dictionary as a Mixed keys...........
+# #............... Create Dictionary................
 
-person = {"Name":"Amneet","Mobile" :122356466}
-
-
-# ............Empty Dictionary..........
-
-person = {}
+# from unicodedata import name
 
 
-# ......Retrieve values from Dictionary..........
-
-person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+# person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
 
 
-# ......Second Method.........
-person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+# # .........Dictionary Created as a Pair........
+# person = dict([("Name","Amneet"),("Country","Canada"),("Status","PR")])
+
+# # .............Dictionary As a Pair using List 
+# listOFElement = [[12,3],[4,6],[6,7]]
+# newDict = dict(listOFElement)
 
 
-for key,value in person.items():
-    print(key,value)
+# person = {"Name":"Amneet","Country":["India","Canada"]}
+
+
+
+# # .........Create an Dictionary as a Mixed keys...........
+
+# person = {"Name":"Amneet","Mobile" :122356466}
+
+
+# # ............Empty Dictionary..........
+
+# person = {}
+
+
+# # ......Retrieve values from Dictionary..........
+
+# person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+
+
+# # ......Second Method.........
+# person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+
+
+# for key,value in person.items():
+#     print(key,value)
 
 
 # ....Best method to retrieve the value is using Get method because its error safe...its hand program gracefully....
@@ -161,14 +161,13 @@ for key,value in person.items():
 
 
 
-dict1 = {'Jessa': 70, 'Arul': 80, 'Emma': 55}
-dict2 = {'Kelly': 68, 'Arul': 50, 'Olivia': 66}
-dict1.update(dict2)
-print(dict1)
+# 
 
 # override first key with second key...........
 
 
 
-
+dict1={'Jessa': 70, 'Arul': 80, 'Emma': 55}
+dict2 = dict1.copy()
+print(dict2)
 
