@@ -171,3 +171,8 @@ dict1={'Jessa': 70, 'Arul': 80, 'Emma': 55}
 dict2 = dict1.copy()
 print(dict2)
 
+# Copy dictionary using dict() constructor
+
+
+dict3 =dict(dict2)
+print(dict3)
