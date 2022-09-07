@@ -219,10 +219,16 @@
 
 # calculate the square of each even number from a list and store in dict
 
-numbers = [1,2,3,4,5,6]
-evenSquares = {x:x**2 for x in numbers if x % 2==0}
-print(evenSquares)
 
 
 
+dict = {1:'aaa',2:'bbb',3:'AAA'}
+print('maximum key is',max(dict))
+print('minimum key is',min(dict))
 
+
+#dictionary with both 'true' keys
+dict1 ={0:'True',0:'True'}
+print(all(dict1))
+# dict2 = {}
+# print(all(dict2))
