@@ -88,91 +88,130 @@
 # # for i in [2,45,67,12,46,67,89,2]:
 # #     if i > largestNumber_so_far:
 # #         largestNumber_so_far = i
-# #     print(largestNumber_so_far,i)
-# # print('after',largestNumber_so_far)
+# # #     print(largestNumber_so_far,i)
+# # # print('after',largestNumber_so_far)
 
 
 
-# # smallest = None
-# # print("Before:", smallest)
-# # for itervar in [3, 41, 12, 9, 74, 15]:
-# #     if smallest is None or itervar < smallest:
-# #         smallest = itervar
-# #         # break
-# #     print("Loop:", itervar, smallest)
-# # print("Smallest:", smallest)
+# # # smallest = None
+# # # print("Before:", smallest)
+# # # for itervar in [3, 41, 12, 9, 74, 15]:
+# # #     if smallest is None or itervar < smallest:
+# # #         smallest = itervar
+# # #         # break
+# # #     print("Loop:", itervar, smallest)
+# # # print("Smallest:", smallest)
 
 
 
-# #............... Create Dictionary................
+# # #............... Create Dictionary................
 
-# from unicodedata import name
-
-
-# person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+# # from unicodedata import name
 
 
-# # .........Dictionary Created as a Pair........
-# person = dict([("Name","Amneet"),("Country","Canada"),("Status","PR")])
-
-# # .............Dictionary As a Pair using List 
-# listOFElement = [[12,3],[4,6],[6,7]]
-# newDict = dict(listOFElement)
+# # person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
 
 
-# person = {"Name":"Amneet","Country":["India","Canada"]}
+# # # .........Dictionary Created as a Pair........
+# # person = dict([("Name","Amneet"),("Country","Canada"),("Status","PR")])
+
+# # # .............Dictionary As a Pair using List 
+# # listOFElement = [[12,3],[4,6],[6,7]]
+# # newDict = dict(listOFElement)
 
 
-
-# # .........Create an Dictionary as a Mixed keys...........
-
-# person = {"Name":"Amneet","Mobile" :122356466}
-
-
-# # ............Empty Dictionary..........
-
-# person = {}
-
-
-# # ......Retrieve values from Dictionary..........
-
-# person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-
-
-# # ......Second Method.........
-# person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
-
-
-# for key,value in person.items():
-#     print(key,value)
-
-
-# ....Best method to retrieve the value is using Get method because its error safe...its hand program gracefully....
+# # person = {"Name":"Amneet","Country":["India","Canada"]}
 
 
 
-#.... One way to add something in dict....
+# # # .........Create an Dictionary as a Mixed keys...........
+
+# # person = {"Name":"Amneet","Mobile" :122356466}
+
+
+# # # ............Empty Dictionary..........
+
+# # person = {}
+
+
+# # # ......Retrieve values from Dictionary..........
+
+# # person = {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+
+
+# # # ......Second Method.........
+# # person= {"Name" :'Amneet',"Country":"Canada","Status":"PR"}
+
+
+# # for key,value in person.items():
+# #     print(key,value)
+
+
+# # ....Best method to retrieve the value is using Get method because its error safe...its hand program gracefully....
 
 
 
-# ....second method usin
+# #.... One way to add something in dict....
 
 
 
+# # ....second method usin
+
+
+
+
+
+# # 
+
+# # override first key with second key...........
+
+
+
+# dict1={'Jessa': 70, 'Arul': 80, 'Emma': 55}
+# dict2 = dict1.copy()
+# print(dict2)
+
+# # Copy dictionary using dict() constructor
+
+
+# dict3 =dict(dict2)
+# print(dict3)
 
 
 # 
 
-# override first key with second key...........
 
 
 
-dict1={'Jessa': 70, 'Arul': 80, 'Emma': 55}
-dict2 = dict1.copy()
-print(dict2)
-
-# Copy dictionary using dict() constructor
 
 
-dict3 =dict(dict2)
-print(dict3)
+# # each dictionary will store data of a single student
+# jessa = {'name': 'Jessa', 'state': 'Texas', 'city': 'Houston', 'marks': 75}
+# emma = {'name': 'Emma', 'state': 'Texas', 'city': 'Dallas', 'marks': 60}
+# kelly = {'name': 'Kelly', 'state': 'Texas', 'city': 'Austin', 'marks': 85}
+
+
+# groupOfStudents ={'student1':jessa,'student2':emma,'student3':kelly}
+# print("DetailOfJessa:",groupOfStudents['student1']['name'])
+# print("DetailOfJessa:",groupOfStudents['student1']['marks'])
+
+
+# print("\n class-details \n")
+# for key,value in groupOfStudents.items():
+#     print(key,value)
+
+#     for key,value in value.items():
+#         print(key,':',value)
+
+
+
+dict1 = {'c': 45, 'b': 95, 'a': 35}
+
+# sorting dictionary by keys
+print(sorted(dict1.items()))
+
+# sort dict eys
+print(sorted(dict1))
+
+# sort dictionary values
+print(sorted(dict1.values()))
