@@ -205,13 +205,24 @@
 
 
 
-dict1 = {'c': 45, 'b': 95, 'a': 35}
+# dict1 = {'c': 45, 'b': 95, 'a': 35}
 
-# sorting dictionary by keys
-print(sorted(dict1.items()))
+# # sorting dictionary by keys
+# print(sorted(dict1.items()))
 
-# sort dict eys
-print(sorted(dict1))
+# # sort dict eys
+# print(sorted(dict1))
 
-# sort dictionary values
-print(sorted(dict1.values()))
+# # sort dictionary values
+# print(sorted(dict1.values()))
+
+
+# calculate the square of each even number from a list and store in dict
+
+numbers = [1,2,3,4,5,6]
+evenSquares = {x:x**2 for x in numbers if x % 2==0}
+print(evenSquares)
+
+
+
+
